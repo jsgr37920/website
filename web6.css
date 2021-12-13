@@ -1,0 +1,301 @@
+html, body {
+  background-image: url("Flyerbilleder/background5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-color: lightgrey;
+  margin: 10px;
+  font-size: 40px;
+  font-family: "Tuna"
+}
+
+
+html {
+scroll-behavior: smooth;
+}
+
+.page-anchor {
+  position: relative;
+  display: block;
+  visibility: hidden;
+  top: calc((61px + 20px) * -1);
+}
+
+.page-anchor2 {
+  position: relative;
+  display: block;
+  visibility: hidden;
+  top: calc((30px + 20px) * -1);
+}
+
+
+
+
+h1 {
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+h3 {
+  color: #6460ab;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+a > h4 {
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+  font-size: 0.5em;
+
+}
+
+
+#subq {
+  font-size: 0.6em;
+}
+
+#subw {
+  font-size: 0.6em;
+}
+
+#sube {
+  font-size: 0.6em;
+}
+
+p {
+  color: black;
+  font-size: 0.5em;
+  margin: 0;
+  width: 70%;
+  margin: auto;
+}
+
+#anni {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 0.6em;
+}
+
+#anni2 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 0.6em;
+}
+
+#om2 {
+  width: 60%;
+margin: auto;
+}
+
+.konta {
+  width: 60%;
+margin: auto;
+}
+
+
+
+
+
+.flexbox-header > div {
+
+  font-size: 0.5em;
+  padding: 20px 20px;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.stick {
+  width: 40%;
+  max-width: 280px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.flexbox-header {
+  background-color: #6460ab;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: -2px
+
+}
+
+a:link, a:visited {
+ color: white;
+ text-decoration: none;
+ padding: 20px 20px;
+
+}
+
+
+
+a:hover{
+ color:#6460ab;
+ text-decoration: none;
+ background-color: white;
+}
+
+
+
+
+.OM-MIG-BAR {
+    background-color: #6460ab;
+    padding: 0 40px;
+}
+
+
+
+.menu {
+    background-color: #6460ab;
+}
+
+.content {
+    background-color: white;
+
+}
+
+
+.footer {
+    background-color: #6460ab;
+}
+
+.grid-page > div {
+    color: white;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.grid-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px;
+}
+
+
+.b1 {
+  display: inline-grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.mobilbillede {
+  display: inline-grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18.5%;
+}
+
+.flyer {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 360px
+
+
+}
+
+
+
+.bird2 {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 360px
+
+
+
+}
+
+.headshot {
+  float: right;
+  margin-right: 50px;
+  width: 25%;
+  min-width: 200px
+
+}
+
+.kontaktinfo {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr;
+}
+
+.ki {
+  grid-column: 2/3;
+  grid-row: 1/1;
+  margin: 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.kaff {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+	width: 500px;
+	height: 500px;
+	background: url('Flyerbilleder/kaff7.png') 0 0 no-repeat;
+	animation: play 1.5s steps(6) infinite;
+
+}
+@keyframes play {
+	0%{background-position:0px;}
+   100% { background-position: -3000px; }
+}
+
+@media only screen and (max-width: 600px) {
+div {
+flex-wrap: wrap;
+
+
+}
+
+.kaff {
+  justify-content: center;
+
+  width: 400px;
+  height: 400px;
+  background: url('Flyerbilleder/kaff7.png') 0 0 no-repeat;
+  animation: play 1.5s steps(6) infinite;
+}
+
+.flexbox-header > div {
+
+  font-size: 20px;
+  padding: 20px 20px;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+}
